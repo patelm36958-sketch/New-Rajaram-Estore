@@ -1,7 +1,10 @@
 {
   "name": "village-grocery-store",
   "private": true,
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "build": "npm run build -w client",
     "start": "node server/src/index.js",
@@ -12,5 +15,8 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "openai": "^6.33.0"
   }
 }
